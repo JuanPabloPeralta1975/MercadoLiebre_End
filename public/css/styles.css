@@ -1,0 +1,404 @@
+*{ /* glosado  clase 14 */
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+
+/* Yonibel Gonzalez */
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #ebebeb;
+    /* font-size: 12px; solo en mi codigo */
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px;
+}
+
+div.top-header{
+    padding: 5%;
+}
+
+header {
+    background-color: #EAC926;
+}
+
+
+/* Quizaira Rodriguez */
+/* h3.titulares {
+    font-size: 24px;
+}
+ */
+
+ header div.logo {
+    width: 50%;
+  }
+  
+  header div.logo {
+    padding: 10px;
+  }
+  header nav {
+    font-size: 12px;
+  }
+  
+  header ul li {
+    list-style-type: none;
+  }
+
+  /* Gregorio Romero 
+ul {
+    list-style-type: none;
+    padding: 0;
+}*/
+  
+  header ul li a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  header .form .input {
+    background-color: #fff;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+  }
+  header .form .submit {
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+  }
+  
+  header div.top-header p {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  div.burger-menu {
+    text-align: center;
+  }
+
+  /* Leo Dechat 
+.burger-menu {
+    text-align: center;
+    padding-bottom: 10px;
+    
+}*/
+  
+  div.burger-menu i {
+    background-color: #0044aa;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+  }
+
+  
+/*.burger {
+    background-color: #1259c3;
+    color: white;
+    border: none;
+    border-radius: 10px;   
+    font-size: 25px;
+    padding: 15px;
+}   VERSION EN MI CODIGO de clase */
+
+
+  
+  article div.main-article {
+    width: 100%;
+  }
+
+/* lo anterior glosado */
+
+/* Franco Olivari */
+/* clase 14 paso 1 70 y 30 */
+.precio {
+    font-size: 18px;
+    width: 30%;
+}
+
+.descuento{
+  width: 70%;
+}
+
+.descuento, .descripcion {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+/* en el codigo de la clase son price, discount y description */
+
+h3,
+.descripcion {
+  color: #666;
+} /* glosado */
+
+section.banner img {
+  width: 100%;
+} /* glosado */
+
+
+
+/* CLASE 13 AGREGANDO MAIN*/
+main{
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+main section article {
+    background-color: #fff;
+    } /* G */
+      
+main section article img {
+    width: 100%;
+    } /* G */
+      
+main section article i,
+    .descuento {
+    color: #39b54a;
+    } /* G */
+
+
+/* clase 14 desafio 1 para el camioncito*/    
+main section article i {
+    
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    }
+ 
+
+
+
+/* CLASE 13 AGREGANDO PARA ARTICLE UN CLASS PRODUCTO*/
+
+.producto{
+    margin: 10px 0px;
+  }
+
+/* CLASE 13 ELEMENTOS DE CAJA DENTRO DE CAJA */
+/* CLASE 14 flex y wrapp paso 1 */
+article div.main-article{
+    width: 100%;
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    position: relative; /* agregado para que se vea camioncito */
+    display: flex;
+    flex-wrap: wrap;
+   }
+ 
+/* CLASE 13 MEDIA paso 2  MEDIA QUERY Leo Torrealba*/
+
+.main-article h4{
+    display:none;
+} /* por defecto en el celu esta oculta la descripcion Lucas*/
+
+
+@media(min-width:361px){
+    .main-article h4{
+        display: block;
+      } /* para medidas mayores a 361 block entonces se ve la descripcion Lucas */
+}
+
+/* paso 2 clase 13  Ale Jabo aplica sombra menos a celu*/
+/* paso 2 clase 14 Lucas en clase */
+
+@media(min-width:361px){
+    /* Tablet  */
+
+
+    .producto{
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+    }
+
+    .products{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      
+    }
+
+    main section article {
+      width: 48%;
+    }
+
+    .precio, .descuento{
+      width: 50%;
+    }
+}
+
+
+@media(min-width:769px){ /* para pantallas desde descktop para arriba */
+  /* tener en cuenta que hereda de lo anterior */
+    /* Descktop Lucas */
+    main section article {
+      width: 23%;
+    }
+
+}
+
+
+
+
+/* EJERCICIO 12 EN EL FOOTER CODE REVIEW*/
+
+footer {
+    text-align: center;
+}
+
+.tarjetaCredito, .caja, .seguridad  { font-size: 2em; margin-bottom: 10px; } 
+
+/* EJERCICIO 13 EN EL HEADER CODE REVIEW */
+
+header nav {
+    display:none;
+}
+
+@media(min-width:361px){
+    header nav {
+        display: block;
+    }
+    }
+
+/* CODE REVIEW 13 */
+
+@media(min-width:361px){
+ .burger-menu {
+  display: none;
+  } 
+}
+
+/* CODE REVIWE 14 */
+
+.top-header{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logo{
+  width: 48%;
+}
+
+.form{
+  width: 48%;
+  font-size: 100%;
+  
+}
+
+.compra{
+  font-size: 100%;
+}
+
+@media(min-width:361px){
+  .nav-header{
+    display: flex; 
+    justify-content: space-between;
+  }
+  
+  .lista-principal{
+    display: flex;
+    
+    }
+  
+  .lista-principal-2{
+    display: flex;
+    }  
+
+  .top-header{
+   flex-wrap: nowrap;
+   } 
+}
+
+
+/*code review 15*/
+
+.perfil{
+  display: flex;
+  flex-wrap: wrap;
+}
+.categoria{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* versión equipo clase 16 */
+
+article:hover .descripcion{
+  display:block;
+}
+
+
+@media(min-width:361px){
+article:hover {
+  box-shadow: 0px 0px 100px rgb(100 100 100);
+}
+
+main section article .descripcion{
+  display: none;
+}
+
+main section article:hover .descripcion{
+  display:block;
+}
+
+
+}
+
+
+main section article :hover i{
+  transition-duration: 1s;
+  transform: rotate(-90deg);
+}
+
+.send-button:hover{
+  background-color: #0022aa;
+  color: white;
+}
+
+
+@media(min-width:361px){
+  footer{
+    display: flex;
+    flex-wrap: nowrap;
+    
+  }
+
+  footer .seguridad :hover  {
+    color:red;
+    
+  }
+  footer .tarjetaCredito:hover {
+    color:red;
+    
+  }
+  footer .caja:hover  {
+    color:red;
+  
+  
+  }
+  
+  
+  
+  }
